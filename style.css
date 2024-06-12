@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Stylish&display=swap');
+
+
+:root{
+    --primary-color :#030514;
+    --second-color : #ffffff;
+    --background-color:#F26C4F;
+    --text-color:#343A40;
+}
+body
+{
+    font-family: "Stylish", serif;
+    background-color: var(--primary-color);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/***-----------Pruebas----------*/
+
+nav {
+    padding: 10px 16px;
+    background-color: var(--second-color);
+}
+.nav-container{
+
+    display: flex;
+    justify-content: space-between;
+    & img {
+        max-width: 280px;
+    }
+    & ul {
+        display: none;
+    }
+}
+
+ul{
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    list-style: none;
+    color: var(--background-color);
+    text-align: center; 
+    list-style: none;
+    padding: 15px;
+
+    & li a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+}
+
+li a:hover {
+    transition: 2s;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 15px 20px;
+    box-shadow: 0 0 10px #F26C4F, 0 0 20px #F26C4F, 0 0 20px #F26C4F ;
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+/***-----------Pruebas----------*/
+
+.redes-sociales{
+    position: absolute;
+    top:  150px;
+    right: 16px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.redes-sociales a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #F26C4F;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #F26C4F;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.redes-sociales a:hover{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+h1{
+    font-family: "Stylish", serif;
+    font-size: 70px;
+    color:var(--second-color);
+    font-weight: 700;
+    text-align: center;
+    display:block;
+    opacity: 0.5;
+    padding: 10px;
+    /* box-shadow: 0 5px 50px rgb(0, 0, 0, 0.9); */
+    position: relative;
+
+    & span{
+        color: var(--background-color);
+        font-size: 100PX;;
+        text-decoration: underline solid #F26C4F 6px;
+    }
+}  
+h1:hover{
+    transform: scale(1.05);
+    opacity: 1;
+    transition: 2s;
+}
+
+h2{
+    font-size: 36px;
+    color: var(--second-color);
+    line-height: 56px;
+    font-weight: 600;
+}
+h3{
+    font-size: 28px;
+    color: var(--background-color);
+    line-height: 32px;
+    font-weight: 600;
+}
+p{
+    font-size: 50px;
+    font-family: "Nothing You Could Do", cursive;
+    line-height: normal;
+    color: var(--second-color);
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    /* opacity: 0.5; */
+    /* box-shadow: 0 5px 50px rgb(0, 0, 0, 0.8); */
+    position: relative;
+    display:block;
+}
+/* p::before{
+    content: '';
+    position: absolute;
+    animation: showRight 1s ease forwards;
+    animation-delay: 4s;
+} */
+
+.btn-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: var(--background-color);
+    color: var(--second-color);
+    padding: 15px 19px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 28px;
+    display: block;
+    line-height: 20px;
+    width: fit-content;
+}
+ 
+.btn-primary:hover{
+    background-color: var(--second-color);
+    color: var(--background-color);
+    box-shadow: 0 0 10px #F26C4F, 0 0 20px #F26C4F, 0 0 20px #F26C4F ;
+    /* border: 3px solid #F26C4F; */
+}
+
+.button-2 {
+    /* backdrop-filter: blur(4px); */
+    background-color: var(--text-color);
+    color: var(--second-color);
+    box-shadow: 0 0 10px #F26C4F, 0 0 20px #F26C4F, 0 0 20px #F26C4F ;
+}
+
+.button-3 {
+    background-color: transparent;
+    border: 2.5px solid #F26C4F;
+    color: var(--second-color);
+}
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/*------------Styles del Hero------------------*/
+
+.hero {
+    background-image: url(img/bg-hero.jpg);
+    background-size: 1500px;
+    background-position: center;
+    padding: 60px 0;
+    & h1 {
+        max-width: 700px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    & p {
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 35px;
+
+    }
+
+    /* & img {
+        max-width: 500px; */
+        /* opacity: 0.5; */
+    }
+}
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+}
+
+/* p:hover
+{
+    transform: scale(1.05);
+    opacity: 1;
+} */
+
+/*------------Styles del Servicio------------------*/
+.services{
+    padding: 50px 0 100px;
+    & h2 {
+        max-width: 700px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+}
+
+.service-item{
+    text-align: center;
+    background-color: var(--text-color);
+    padding: 20PX;
+    border-radius: 8PX;
+    & h3{
+        margin-bottom: 30px;
+    }
+    & a {
+        display: flex;
+        color: var(--second-color);
+    }
+    & img {
+        min-height: 100px;
+    }
+    & p {
+        max-width: 300px;
+        margin: 0 auto 20px;
+        font-size: 24px;
+    }
+}
+
+.service-item:hover{
+    transform: scale(1.05);
+    transition: 1.5s;
+    opacity: 1;
+    box-shadow: 0 0 10px #F26C4F, 0 0 20px #F26C4F, 0 0 20px #F26C4F ;
+}
+
+
+/*----------MEDIA QUERYS------------*/
+
+@media (min-width:768px) {
+
+    .hero-container {
+        flex-wrap: nowrap;
+        & h1 {
+            font-size: 40px;
+        }
+        & p {
+            font-size: 18px;
+        }
+    }
+    .service-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .nav-container{
+        & ul {
+            display: flex;
+        }
+    }
+
+    .hero-container {
+        flex-wrap: nowrap;
+        & h1 {
+            font-size: 80px;
+        }
+        & p {
+            font-size: 28px;
+        }
+    }
+
+    .service-list{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
